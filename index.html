@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Texto Formatado</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <label for="razaoSocial">Razão Social:</label>
+        <input type="text" id="razaoSocial" required><br>
+        
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" required><br>
+        
+        <label for="ie">IE:</label>
+        <input type="text" id="ie" required><br>
+        
+        <label for="tipoContrato">Tipo de Contrato:</label>
+        <select id="tipoContrato" required>
+            <option value="">Selecione</option> <!-- Para evitar a seleção padrão -->
+            <option value="Mensal">Mensal</option>
+            <option value="Anuidade">Anuidade</option>
+        </select><br>
+        
+        <label for="valorContrato">Valor da Mensalidade ou Anuidade:</label>
+        <input type="text" id="valorContrato" required><br>
+        
+        <label for="nomeContato">Nome do Contato:</label>
+        <input type="text" id="nomeContato" required><br>
+        
+        <label for="contatoCliente">Contato do Cliente:</label>
+        <input type="text" id="contatoCliente" required><br>
+        
+        <label for="dataPrimeiraBoleta">Data da Primeira Boleta:</label>
+        <input type="text" id="dataPrimeiraBoleta" required><br>
+        
+        <button onclick="gerarTexto()">Gerar</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
