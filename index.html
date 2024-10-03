@@ -36,13 +36,9 @@
         <label for="dataPrimeiraBoleta">Data da Primeira Boleta:</label>
         <input type="date" id="dataPrimeiraBoleta" required><br>
 
-        <p>----</p>
-
-        <!-- Novo Campo: Email da Contabilidade -->
         <label for="emailContabilidade">Email da Contabilidade:</label>
-        <input type="email" id="emailContabilidade"><br>
-
-        <!-- Novo Campo: Adesão Inicial -->
+        <input type="email" id="emailContabilidade" required><br>
+        <br><br><br><br>
         <label for="adesaoInicial">Adesão Inicial:</label>
         <select id="adesaoInicial" required>
             <option value="">Selecione</option>
@@ -50,13 +46,16 @@
             <option value="Não">Não</option>
         </select><br>
 
-        <!-- Novo Campo: Tipo de Regime -->
         <label for="tipoRegime">Tipo de Regime:</label>
         <select id="tipoRegime" required>
             <option value="">Selecione</option>
             <option value="MEI">MEI - Não chega arquivos</option>
             <option value="Outros">Outros - Chega arquivos</option>
         </select><br>
+
+        <!-- Novo Campo de Observações -->
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" rows="4" cols="50" placeholder="Escreva aqui suas observações..."></textarea><br>
         
         <button onclick="gerarTexto()">Gerar</button>
     </div>
