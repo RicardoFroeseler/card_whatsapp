@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Cadastro para o financeiro</title>
+    <title>Gerador de Cadastro para o Financeiro</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
         
         <label for="tipoContrato">Tipo de Contrato:</label>
         <select id="tipoContrato" required>
-            <option value="">Selecione</option> <!-- Para evitar a seleção padrão -->
+            <option value="">Selecione</option>
             <option value="Mensal">Mensal</option>
             <option value="Anuidade">Anuidade</option>
         </select><br>
@@ -34,7 +34,29 @@
         <input type="text" id="contatoCliente" required><br>
         
         <label for="dataPrimeiraBoleta">Data da Primeira Boleta:</label>
-        <input type="text" id="dataPrimeiraBoleta" required><br>
+        <input type="date" id="dataPrimeiraBoleta" required><br>
+
+        <p>----</p>
+
+        <!-- Novo Campo: Email da Contabilidade -->
+        <label for="emailContabilidade">Email da Contabilidade:</label>
+        <input type="email" id="emailContabilidade"><br>
+
+        <!-- Novo Campo: Adesão Inicial -->
+        <label for="adesaoInicial">Adesão Inicial:</label>
+        <select id="adesaoInicial" required>
+            <option value="">Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select><br>
+
+        <!-- Novo Campo: Tipo de Regime -->
+        <label for="tipoRegime">Tipo de Regime:</label>
+        <select id="tipoRegime" required>
+            <option value="">Selecione</option>
+            <option value="MEI">MEI - Não chega arquivos</option>
+            <option value="Outros">Outros - Chega arquivos</option>
+        </select><br>
         
         <button onclick="gerarTexto()">Gerar</button>
     </div>
