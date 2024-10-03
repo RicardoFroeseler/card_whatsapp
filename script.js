@@ -11,10 +11,11 @@ function gerarTexto() {
     const emailContabilidade = document.getElementById("emailContabilidade").value; 
     const adesaoInicial = document.getElementById("adesaoInicial").value; 
     const tipoRegime = document.getElementById("tipoRegime").value; 
+    const opcaoEscolhida = document.getElementById("opcaoEscolhida").value; // Captura o valor da opção escolhida
     const observacoes = document.getElementById("observacoes").value; // Captura o valor das observações
 
     // Verificação se todos os campos obrigatórios estão preenchidos
-    if (!razaoSocial || !cnpj || !ie || !tipoContrato || !valorContrato || !nomeContato || !contatoCliente || !dataPrimeiraBoleta || !emailContabilidade || !adesaoInicial || !tipoRegime) {
+    if (!razaoSocial || !cnpj || !ie || !tipoContrato || !valorContrato || !nomeContato || !contatoCliente || !dataPrimeiraBoleta || !emailContabilidade || !adesaoInicial || !tipoRegime || !opcaoEscolhida) {
         alert("Por favor, preencha todos os campos.");
         return; // Interrompe a execução da função caso algum campo esteja vazio
     }
@@ -44,6 +45,7 @@ Data da Primeira Boleta: ${dataPrimeiraBoleta}
 Email da Contabilidade: ${emailContabilidade} 
 Adesão Inicial: ${adesaoInicial}
 Tipo de Regime: ${tipoRegime}
+Opção Escolhida: ${opcaoEscolhida} 
 Data da Geração: ${dataGeracao}
 Observações: ${observacoes} 
     `;
